@@ -18,6 +18,7 @@ const App = () => {
   useEffect(() => {
     contactService.getAll().then(allContacts => {
       setPersons(allContacts)
+      console.log(allContacts)
     })
   }, [])
 
